@@ -1,0 +1,36 @@
+#Stack .current,
+#Stack .next.transition-in-slide,
+#Stack .previous.transition-out-slide,
+#Stack .next.transition-in-slide-up,
+#Stack .previous.transition-out-slide-up {
+  opacity: 1;
+  left: 0;
+  top: 0;
+}
+#Stack {
+  width: 500px;
+  height: 300px;
+  background-color: #d3d3d3;
+  overflow: hidden;
+}
+#Stack > * {
+  transition: opacity 1s, left 1s, top 1s;
+  position: relative;
+  opacity: 0;
+}
+#Stack .next.transition-in-slide {
+  left: 500;
+}
+#Stack .previous.transition-out-slide {
+  left: -500;
+}
+#Stack .next.transition-in-slide-up {
+  top: 500;
+}
+#Stack .previous.transition-out-slide-up {
+  top: -500;
+}
+#Stack .after,
+#Stack .before {
+  visibility: hidden;
+}
