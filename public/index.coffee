@@ -1,20 +1,21 @@
-$ ->
+app = angular.module('app', [])
+app.controller 'MainCtrl', ->
+  ctrl = this
   currentSlide = 0
   slideElements = $('#Stack').children()
 
-  $('#back').on 'click', ->
+  this.goBack = ->
     go(currentSlide, currentSlide-1)
 
-  $('#next').on 'click', ->
+  this.goNext = ->
     go(currentSlide, currentSlide+1)
-
 
   go = (from,to) ->
     # only allow slides 0-4
     to = Math.min 4, Math.max(0, to)
 
     currentSlide = to
-    $('#current').text currentSlide
+    ctrl.current = currentSlide
 
     $(slideElements).removeClass 'current next previous before after'
     for element in slideElements
@@ -22,12 +23,16 @@ $ ->
       inNum  = elem.data 'in'
       outNum = elem.data 'out'
 
-      # before | previous | current | next | after
-      elem.addClass 'current'   if to >= inNum && to < outNum
-      elem.addClass 'previous'  if to == outNum
-      elem.addClass 'next'      if to + 1 == inNum
-      elem.addClass 'before'    if to > outNum
-      elem.addClass 'after'     if to < inNum - 1
+      if to > outNum
+        elem.addClass 'before'
+      else if to == outNum
+        elem.addClass 'previous'
+      else if to >= inNum && to < outNum
+        elem.addClass 'current'
+      else if to == inNum - 1
+        elem.addClass 'next'
+      else if to < inNum - 1
+        elem.addClass 'after'
 
   go(0,0)
 
