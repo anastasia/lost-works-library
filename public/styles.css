@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 #Stack .current,
 #Stack .next.transition-in-slide,
 #Stack .previous.transition-out-slide,
@@ -7,30 +12,311 @@
   left: 0;
   top: 0;
 }
+.stack-element {
+  transition: opacity 1s, left 1s, top 1s;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
 #Stack {
   width: 500px;
   height: 300px;
   background-color: #d3d3d3;
   overflow: hidden;
-}
-#Stack > * {
-  transition: opacity 1s, left 1s, top 1s;
   position: relative;
-  opacity: 0;
+}
+#Stack > .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 #Stack .next.transition-in-slide {
-  left: 500;
+  left: 500px;
 }
 #Stack .previous.transition-out-slide {
-  left: -500;
+  left: -500px;
 }
 #Stack .next.transition-in-slide-up {
-  top: 500;
+  top: 500px;
 }
 #Stack .previous.transition-out-slide-up {
-  top: -500;
+  top: -500px;
+}
+#Stack .current.delay-in-100 {
+  transition-delay: 100ms;
+}
+#Stack .current.duration-in-100 {
+  transition-duration: 100ms;
+}
+#Stack .current.delay-in-200 {
+  transition-delay: 200ms;
+}
+#Stack .current.duration-in-200 {
+  transition-duration: 200ms;
+}
+#Stack .current.delay-in-300 {
+  transition-delay: 300ms;
+}
+#Stack .current.duration-in-300 {
+  transition-duration: 300ms;
+}
+#Stack .current.delay-in-400 {
+  transition-delay: 400ms;
+}
+#Stack .current.duration-in-400 {
+  transition-duration: 400ms;
+}
+#Stack .current.delay-in-500 {
+  transition-delay: 500ms;
+}
+#Stack .current.duration-in-500 {
+  transition-duration: 500ms;
+}
+#Stack .current.delay-in-600 {
+  transition-delay: 600ms;
+}
+#Stack .current.duration-in-600 {
+  transition-duration: 600ms;
+}
+#Stack .current.delay-in-700 {
+  transition-delay: 700ms;
+}
+#Stack .current.duration-in-700 {
+  transition-duration: 700ms;
+}
+#Stack .current.delay-in-800 {
+  transition-delay: 800ms;
+}
+#Stack .current.duration-in-800 {
+  transition-duration: 800ms;
+}
+#Stack .current.delay-in-900 {
+  transition-delay: 900ms;
+}
+#Stack .current.duration-in-900 {
+  transition-duration: 900ms;
+}
+#Stack .current.delay-in-1000 {
+  transition-delay: 1000ms;
+}
+#Stack .current.duration-in-1000 {
+  transition-duration: 1000ms;
+}
+#Stack .current.delay-in-1100 {
+  transition-delay: 1100ms;
+}
+#Stack .current.duration-in-1100 {
+  transition-duration: 1100ms;
+}
+#Stack .current.delay-in-1200 {
+  transition-delay: 1200ms;
+}
+#Stack .current.duration-in-1200 {
+  transition-duration: 1200ms;
+}
+#Stack .current.delay-in-1300 {
+  transition-delay: 1300ms;
+}
+#Stack .current.duration-in-1300 {
+  transition-duration: 1300ms;
+}
+#Stack .current.delay-in-1400 {
+  transition-delay: 1400ms;
+}
+#Stack .current.duration-in-1400 {
+  transition-duration: 1400ms;
+}
+#Stack .current.delay-in-1500 {
+  transition-delay: 1500ms;
+}
+#Stack .current.duration-in-1500 {
+  transition-duration: 1500ms;
+}
+#Stack .current.delay-in-1600 {
+  transition-delay: 1600ms;
+}
+#Stack .current.duration-in-1600 {
+  transition-duration: 1600ms;
+}
+#Stack .current.delay-in-1700 {
+  transition-delay: 1700ms;
+}
+#Stack .current.duration-in-1700 {
+  transition-duration: 1700ms;
+}
+#Stack .current.delay-in-1800 {
+  transition-delay: 1800ms;
+}
+#Stack .current.duration-in-1800 {
+  transition-duration: 1800ms;
+}
+#Stack .current.delay-in-1900 {
+  transition-delay: 1900ms;
+}
+#Stack .current.duration-in-1900 {
+  transition-duration: 1900ms;
+}
+#Stack .current.delay-in-2000 {
+  transition-delay: 2000ms;
+}
+#Stack .current.duration-in-2000 {
+  transition-duration: 2000ms;
+}
+#Stack .current.delay-in-2100 {
+  transition-delay: 2100ms;
+}
+#Stack .current.duration-in-2100 {
+  transition-duration: 2100ms;
+}
+#Stack .current.delay-in-2200 {
+  transition-delay: 2200ms;
+}
+#Stack .current.duration-in-2200 {
+  transition-duration: 2200ms;
+}
+#Stack .current.delay-in-2300 {
+  transition-delay: 2300ms;
+}
+#Stack .current.duration-in-2300 {
+  transition-duration: 2300ms;
+}
+#Stack .current.delay-in-2400 {
+  transition-delay: 2400ms;
+}
+#Stack .current.duration-in-2400 {
+  transition-duration: 2400ms;
+}
+#Stack .current.delay-in-2500 {
+  transition-delay: 2500ms;
+}
+#Stack .current.duration-in-2500 {
+  transition-duration: 2500ms;
+}
+#Stack .current.delay-in-2600 {
+  transition-delay: 2600ms;
+}
+#Stack .current.duration-in-2600 {
+  transition-duration: 2600ms;
+}
+#Stack .current.delay-in-2700 {
+  transition-delay: 2700ms;
+}
+#Stack .current.duration-in-2700 {
+  transition-duration: 2700ms;
+}
+#Stack .current.delay-in-2800 {
+  transition-delay: 2800ms;
+}
+#Stack .current.duration-in-2800 {
+  transition-duration: 2800ms;
+}
+#Stack .current.delay-in-2900 {
+  transition-delay: 2900ms;
+}
+#Stack .current.duration-in-2900 {
+  transition-duration: 2900ms;
+}
+#Stack .current.delay-in-3000 {
+  transition-delay: 3000ms;
+}
+#Stack .current.duration-in-3000 {
+  transition-duration: 3000ms;
+}
+#Stack .current.delay-in-3100 {
+  transition-delay: 3100ms;
+}
+#Stack .current.duration-in-3100 {
+  transition-duration: 3100ms;
+}
+#Stack .current.delay-in-3200 {
+  transition-delay: 3200ms;
+}
+#Stack .current.duration-in-3200 {
+  transition-duration: 3200ms;
+}
+#Stack .current.delay-in-3300 {
+  transition-delay: 3300ms;
+}
+#Stack .current.duration-in-3300 {
+  transition-duration: 3300ms;
+}
+#Stack .current.delay-in-3400 {
+  transition-delay: 3400ms;
+}
+#Stack .current.duration-in-3400 {
+  transition-duration: 3400ms;
+}
+#Stack .current.delay-in-3500 {
+  transition-delay: 3500ms;
+}
+#Stack .current.duration-in-3500 {
+  transition-duration: 3500ms;
+}
+#Stack .current.delay-in-3600 {
+  transition-delay: 3600ms;
+}
+#Stack .current.duration-in-3600 {
+  transition-duration: 3600ms;
+}
+#Stack .current.delay-in-3700 {
+  transition-delay: 3700ms;
+}
+#Stack .current.duration-in-3700 {
+  transition-duration: 3700ms;
+}
+#Stack .current.delay-in-3800 {
+  transition-delay: 3800ms;
+}
+#Stack .current.duration-in-3800 {
+  transition-duration: 3800ms;
+}
+#Stack .current.delay-in-3900 {
+  transition-delay: 3900ms;
+}
+#Stack .current.duration-in-3900 {
+  transition-duration: 3900ms;
+}
+#Stack .current.delay-in-4000 {
+  transition-delay: 4000ms;
+}
+#Stack .current.duration-in-4000 {
+  transition-duration: 4000ms;
 }
 #Stack .after,
 #Stack .before {
   visibility: hidden;
+}
+#Timeline .num {
+  display: inline-block;
+  width: 20px;
+}
+#Timeline .headers .num {
+  visibility: hidden;
+}
+#Timeline .headers .block-hint {
+  text-align: center;
+  background-color: #fff;
+}
+#Timeline .layer {
+  background-color: #d3d3d3;
+  display: inline-block;
+  height: 22px;
+  position: relative;
+}
+#Timeline .block-hint {
+  display: inline-block;
+  width: 80px;
+  height: 22px;
+  background-color: #ddd;
+  margin-right: -4px;
+}
+#Timeline .asset {
+  position: absolute;
+  top: 0;
+  background-color: #ffc0cb;
+  width: 80px;
+  height: 22px;
+  overflow: hidden;
+  border: #f00 1px solid;
 }

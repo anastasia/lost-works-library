@@ -9,5 +9,5 @@ npm start
 coffee --watch --compile public/index.coffee
 
 // to compile stylus:
-stylus public/styles -w
+stylus public/styles.styl -w
 ```
