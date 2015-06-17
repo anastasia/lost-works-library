@@ -1,5 +1,6 @@
-simple-stackcore
+dummy-angularapp
 ============
+This is a super basic app setup.  Useful for exploring client-side stuff in isolation.
 
 ```
 npm install
