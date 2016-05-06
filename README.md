@@ -1,7 +1,5 @@
-dummy-angularapp
-============
-This is a super basic app setup.  Useful for exploring client-side stuff in isolation.
-
+lost works library
+==================
 ```
 npm install
 npm start

@@ -1,5 +1,5 @@
 {
-  "name": "simple-stackcore",
+  "name": "lost-works-library",
   "version": "0.0.0",
   "description": "",
   "main": "index.coffee",
@@ -7,7 +7,7 @@
     "start": "node-dev app.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "anastasia",
   "license": "ISC",
   "devDependencies": {
     "coffee-script": "^1.8.0",
