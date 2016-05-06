@@ -16,7 +16,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <h1>{{title}}</h1>\n    <h2>My Heroes</h2>\n    <ul class=\"books\">\n      <li *ngFor=\"let hero of books\"\n        [class.selected]=\"hero === selectedHero\"\n        (click)=\"onSelect(hero)\">\n        <span class=\"badge\">{{hero.id}}</span> {{hero.title}}\n      </li>\n    </ul>\n    <div *ngIf=\"selectedHero\">\n      <h2>{{selectedHero.name}} details!</h2>\n      <div><label>id: </label>{{selectedHero.id}}</div>\n      <div>\n        <label>name: </label>\n        <input [(ngModel)]=\"selectedHero.name\" placeholder=\"name\"/>\n      </div>\n    </div>\n  ",
+            templateUrl: './app/books.component.html',
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -41,4 +41,4 @@ var BOOKS = [
     { "id": 19, "title": "Magma" },
     { "id": 20, "title": "Tornado" }
 ];
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=books.component.js.map
