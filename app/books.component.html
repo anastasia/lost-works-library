@@ -1,17 +1,17 @@
 <h1>{{title}}</h1>
-<h2>My Heroes</h2>
+<h2>Lost Works Library</h2>
 <ul class="books">
-  <li *ngFor="let hero of books"
-    [class.selected]="hero === selectedHero"
-    (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.title}}
+  <li *ngFor="let book of books"
+    [class.selected]="book === selectedBook"
+    (click)="onSelect(book)">
+    <span class="badge">{{book.id}}</span> {{book.title}}
   </li>
 </ul>
-<div *ngIf="selectedHero">
-  <h2>{{selectedHero.name}} details!</h2>
-  <div><label>id: </label>{{selectedHero.id}}</div>
+<div *ngIf="selectedBook">
+  <h2>{{selectedBook.title}} details!</h2>
+  <div><label>id: </label>{{selectedBook.id}}</div>
   <div>
     <label>name: </label>
-    <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+    <input [(ngModel)]="selectedBook.title" placeholder="title"/>
   </div>
 </div>
